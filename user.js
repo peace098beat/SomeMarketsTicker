@@ -42,6 +42,14 @@ function load_api(url, name){
             console.log(data);
         })
         .fail(function(jqXHR,status,error){
+            var ms = new Date() - start_time;
+            document.getElementById(name)
+             .getElementsByClassName("time")[0]
+             .innerHTML = ms +" [ms]";
+            
+            document.getElementById(name)
+             .getElementsByClassName("response")[0]
+             .innerHTML = error;
             console.log(error);
         });
 }; 
@@ -122,7 +130,9 @@ function load_quoine(){
 /* TIMER */ 
 /*********************************************/
 var timer1;
-var INTERVAL=5000;
+var INTERVAL=1000;
+
+document.getElementById("interval").innerHTML="<small>取得間隔 "+INTERVAL+" ms</small>";
 
 function stopWatchDec(func){
     // console.time('measurement of time'); // 計測開始
@@ -132,11 +142,8 @@ function stopWatchDec(func){
 
 
 function startTimer(){
+    clearInterval(timer1);
     timer1 = setInterval(function(){
-    //   load_zaif();
-    //   load_bitflyer();
-    //   load_coincheck();
-    //   load_quoine();
        load_api(API_ZAIF, "zaif");
        load_api(API_BITFLYER,"bitflyer");
        load_api(API_COINCHECK, "coincheck");

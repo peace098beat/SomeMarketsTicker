@@ -78,7 +78,8 @@
 
 
 
-    <p class="text-right"><small>TIME: 1s=1000ms. ex) 0.5s = 5000ms</small></p>
+    <p class="text-right"><small>TIME: 1s=1000ms. ex) 0.5s = 500ms</small></p>
+    <p class="text-right" id="interval"><small>Interval:</small></p>
 
    
     <style>
@@ -90,6 +91,9 @@
       <p id="flash_text">...</p>
     </div>
     
+    <button type="button" class="btn btn-primary btn-sm" onclick="startTimer();"/>Start</button>
+    <button type="button" class="btn btn-secondary btn-sm" onclick="stopTimer();">Stop</button>
+  
     
    </div> <!--/container-->
 
