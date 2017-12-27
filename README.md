@@ -75,3 +75,4 @@
 	https://api.quoine.com/products/5		
 	{"id":"5","product_type":"CurrencyPair","code":"CASH","name":" CASH Trading","market_ask":1732987.41088,"market_bid":1731208.00107,"indicator":-1,"currency":"JPY","currency_pair_code":"BTCJPY","symbol":"楼","btc_minimum_withdraw":null,"fiat_minimum_withdraw":null,"pusher_channel":"product_cash_btcjpy_5","taker_fee":0.0,"maker_fee":0.0,"low_market_bid":1200000.0,"high_market_ask":1788000.0,"volume_24h":4875.746112279999999996,"last_price_24h":1640491.86,"last_traded_price":1732986.74255,"last_traded_quantity":0.01,"quoted_currency":"JPY","base_currency":"BTC","disabled":false,"exchange_rate":0.008825930584055956399902915}		
 # SomeMarketsTicker
+# SomeMarketsTicker
